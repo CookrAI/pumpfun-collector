@@ -1,0 +1,2 @@
+[console_scripts]
+pumpfun-collector = pumpfun_collector.cli:main

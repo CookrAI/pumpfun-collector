@@ -1,0 +1,18 @@
+[project]
+name = "pumpfun-collector"
+version = "0.1.0"
+description = "Collect pump.fun coin metadata and logo images as a deduplicated image dataset."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["httpx[http2]>=0.27", "websockets>=13", "pillow>=10", "imagehash>=4.3"]
+
+[project.scripts]
+pumpfun-collector = "pumpfun_collector.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pumpfun_collector"]

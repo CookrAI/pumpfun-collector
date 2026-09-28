@@ -1,0 +1,4 @@
+httpx[http2]>=0.27
+websockets>=13
+pillow>=10
+imagehash>=4.3
