@@ -4,7 +4,7 @@ Collect pump.fun coin metadata and logo images as a clean, deduplicated
 image dataset. No API keys.
 
 ```
-pip install git+https://github.com/candeploys/pumpfun-collector
+pip install git+https://github.com/CookrAI/pumpfun-collector
 pumpfun-collector sweep            # ~7k coins that actually traded (graduated first)
 pumpfun-collector stream --minutes 60   # live creations, ~25/min, no key
 pumpfun-collector fetch            # images/<mint>.jpg + images.jsonl (phash, dedup)
@@ -39,6 +39,5 @@ Status values: `ok` `dup` `small` `flat` `bad` `failed`.
 
 Everything is resumable: re-run any command and it only touches new rows.
 
-Built for training [COOKR](https://github.com/candeploys/cookr), the open
-meme image model. Sister tools: `meme-collector` (imgflip, Reddit, KYM, 4chan),
-`x-collector` (X).
+---
+Part of [COOKR](https://github.com/CookrAI/cookr), the open meme image model. [cookr.pro](https://cookr.pro) · hi@cookr.pro · MIT

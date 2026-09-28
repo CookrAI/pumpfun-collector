@@ -7,6 +7,10 @@ license = "MIT"
 requires-python = ">=3.11"
 dependencies = ["httpx[http2]>=0.27", "websockets>=13", "pillow>=10", "imagehash>=4.3"]
 
+[project.urls]
+Homepage = "https://cookr.pro"
+Repository = "https://github.com/CookrAI/pumpfun-collector"
+
 [project.scripts]
 pumpfun-collector = "pumpfun_collector.cli:main"
 
